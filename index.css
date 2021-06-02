@@ -1,0 +1,19 @@
+body {
+	background-color: aqua;
+}
+#gallery {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	gap: 30px;
+}
+.gallery__item {
+	max-width: 100%;
+}
+
+.gallery__img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
