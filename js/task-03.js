@@ -33,7 +33,7 @@ const elementsList = images.map((image) => {
 		return elementList;
 	});
 	
-	console.log(...elementsList);
+	// console.log(...elementsList);
 	listContainerImages.append(...elementsList);
 // ====================================================
 // ====================================================	
