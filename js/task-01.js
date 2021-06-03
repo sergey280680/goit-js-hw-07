@@ -7,10 +7,10 @@ console.log(`В списке ${numberOfCategories} категории.`);
 // =====================
 
 // ======== method 2 ===============================
-// const navEl1 = document.querySelector("#categories");
-// const numberOfCategories1 = navEl1.childElementCount;
+const navEl1 = document.querySelector("#categories");
+const numberOfCategories1 = navEl1.childElementCount;
 
-// console.log(`В списке ${numberOfCategories1} категории.`);
+console.log(`В списке ${numberOfCategories1} категории.`);
 // =====================
 
 
@@ -24,7 +24,7 @@ console.log(`В списке ${numberOfCategories} категории.`);
 
 
 
-console.log(navEl);
+
 
 navEl.forEach(elem => {
 	const nameCategory = elem.querySelector('h2').textContent;
