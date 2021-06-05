@@ -19,4 +19,5 @@ const liElements = ingredients.map((elem) => {
 	return liEl;
 });
 
+console.log(...liElements);
 listIngridientsEl.append(...liElements);

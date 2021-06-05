@@ -21,9 +21,5 @@ function onClickDecrementBtn() {
 }
 
 function onClickIncrementBtn() {
-	 refs.currentValue.textContent = counterValue += 1;
+	refs.currentValue.textContent = counterValue += 1;
 }
-
-
-
-

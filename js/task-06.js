@@ -7,7 +7,7 @@
 const input = document.getElementById("validation-input");
 const inputLength = Number(input.getAttribute("data-length"));
 
-input.addEventListener("blur", (el) => {
+input.addEventListener("blur", (event) => {
 	if (el.currentTarget.value.length !== inputLength) {
 		input.classList.add("invalid");
 	} else if (el.currentTarget.classList.contains("invalid")) {

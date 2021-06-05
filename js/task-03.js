@@ -24,20 +24,16 @@ const listContainerImages = document.querySelector("#gallery");
 
 const elementsList = images.map((image) => {
 	const elementList = document.createElement("li");
-	elementList.classList.add('gallery__item')
+	elementList.classList.add("gallery__item");
 	elementList.insertAdjacentHTML(
 		"afterbegin",
 		`<img src="${image.url}" alt="${image.alt}"
 		 class="gallery__img">`
 	);
-		return elementList;
-	});
-	
-	// console.log(...elementsList);
-	listContainerImages.append(...elementsList);
+	return elementList;
+});
+
+// console.log(...elementsList);
+listContainerImages.append(...elementsList);
 // ====================================================
-// ====================================================	
-
-
-
-
+// ====================================================

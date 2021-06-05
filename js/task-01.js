@@ -13,7 +13,6 @@ const numberOfCategories1 = navEl1.childElementCount;
 console.log(`В списке ${numberOfCategories1} категории.`);
 // =====================
 
-
 // Для каждого элемента li.item в списке ul#categories, найдет и выведет в консоль текст заголовка элемента (тега h2) и количество элементов в категории (всех вложенных в него элементов li).
 
 // Например для первой категории получится:
@@ -21,18 +20,9 @@ console.log(`В списке ${numberOfCategories1} категории.`);
 // Категория: Животные
 // Количество элементов: 4
 
-
-
-
-
-
-navEl.forEach(elem => {
-	const nameCategory = elem.querySelector('h2').textContent;
-	const totalElements = elem.querySelector("ul").children.length; 
+navEl.forEach((elem) => {
+	const nameCategory = elem.querySelector("h2").textContent;
+	const totalElements = elem.querySelector("ul").children.length;
 	console.log(`Категория: ${nameCategory}
 Количество элементов: ${totalElements}`);
-})
-
-
-
-
+});
