@@ -35,18 +35,19 @@ const containerImages = createListImages(images);
 
 listContainerImages.insertAdjacentHTML("beforeend", containerImages);
 
-// const elementsList = images.map((image) => {
-// 	const elementList = document.createElement("li");
-// 	// elementList.classList.add("gallery__item");
-// 	elementList.insertAdjacentHTML(
-// 		"afterbegin",
-// 		`<img src="${image.url}" alt="${image.alt}"
-// 		 class="gallery__img">`
-// 	);
-// 	return elementList;
-// });
+// =====================================
+const elementsList = images.map((image) => {
+	const elementList = document.createElement("li");
+	// elementList.classList.add("gallery__item");
+	elementList.insertAdjacentHTML(
+		"afterbegin",
+		`<img src="${image.url}" alt="${image.alt}"
+		 class="gallery__img">`
+	);
+	return elementList;
+});
 
-// console.log(...elementsList);
-// listContainerImages.append(...elementsList);
+console.log(...elementsList);
+listContainerImages.append(...elementsList);
 // ====================================================
 // ====================================================
